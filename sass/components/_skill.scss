@@ -1,0 +1,17 @@
+.skill {
+	&__circle {
+		width: 9rem;
+		height: 9rem;
+		border: 2px solid $color-secondary-yellow;
+		border-radius: 100px;
+		position: relative;
+	}
+
+	&__icon {
+		height: 7rem;
+		width: 7rem;
+		padding: 1rem;
+
+		@include centerContent;
+	}
+}

@@ -1,0 +1,72 @@
+.project {
+	border: 0.4rem solid $color-secondary-green;
+	border-radius: 5%;
+	display: grid;
+	grid-template-rows: 10rem 1fr 12rem 10rem;
+	grid-gap: 3rem;
+
+	grid-template-areas:
+		'title title'
+		'project project'
+		'content content'
+		'github github';
+
+	h3 {
+		grid-area: title;
+		padding: 5rem 3rem;
+	}
+
+	.btn__project {
+		grid-area: project;
+		text-decoration: none;
+		padding: 2.5rem 1.5rem;
+		background-color: $color-secondary-green;
+		font-size: 1.6rem;
+		clip-path: polygon(0% 100%, 0% 0%, 70% 50%);
+		color: $color-white;
+		transform-origin: left;
+		transition: transform 0.2s;
+
+		&:hover {
+			transform: scaleX(1.1);
+			background-color: $color-secondary-green-dark;
+		}
+	}
+
+	&__grid {
+		grid-area: content;
+		display: grid;
+		grid-template-columns: 10% minmax(20rem, max-content);
+		grid-gap: 1.5rem;
+		margin-left: 2rem;
+
+		& .circle {
+			align-self: center;
+		}
+
+		& .p--small {
+			align-self: center;
+			width: 90%;
+		}
+	}
+
+	.btn__github {
+		grid-area: github;
+		align-self: start;
+		text-decoration: none;
+		padding: 2.5rem 1.5rem;
+		background-color: $color-black;
+		font-size: 1.6rem;
+		color: $color-secondary-red;
+		text-align: right;
+		clip-path: polygon(100% 0%, 100% 100%, 30% 50%);
+
+		transform-origin: right;
+		transition: transform 0.2s;
+
+		&:hover {
+			transform: scaleX(1.1);
+			background-color: $color-max-black;
+		}
+	}
+}

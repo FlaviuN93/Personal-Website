@@ -1,0 +1,27 @@
+.header {
+	display: flex;
+	justify-content: space-around;
+	&__name {
+		display: flex;
+		margin-bottom: 7rem;
+
+		& h2 {
+			align-self: center;
+			margin-left: 4rem;
+		}
+	}
+
+	&__content {
+		width: 65%;
+		p {
+			width: 65%;
+		}
+	}
+
+	&__img {
+		height: 40rem;
+		padding: 1rem;
+		border: 3px solid $color-secondary-green;
+		border-radius: 50%;
+	}
+}

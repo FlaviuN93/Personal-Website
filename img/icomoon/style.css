@@ -1,0 +1,80 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.angular-icon {
+  width: 0.9375em;
+}
+
+.case-icon {
+  width: 1.125em;
+}
+
+.conversation-icon {
+  width: 1.0625em;
+}
+
+.education-svg {
+  width: 1.46875em;
+}
+
+.facebook-icon {
+  width: 0.46875em;
+}
+
+.github-icon {
+  width: 1.03125em;
+}
+
+.graduation-cap-icon {
+  width: 1.71875em;
+}
+
+.header-svg {
+  width: 0.96875em;
+}
+
+.html-icon {
+  width: 0.71875em;
+}
+
+.java-icon {
+  width: 0.75em;
+}
+
+.javascript-icon {
+  width: 1.15625em;
+}
+
+.linkedin-icon {
+  width: 1.03125em;
+}
+
+.mail-icon {
+  width: 0.96875em;
+}
+
+.mongodb-icon {
+  width: 1.84375em;
+}
+
+.nodeJS-icon {
+  width: 0.875em;
+}
+
+.spider-svg {
+  width: 1.34375em;
+}

@@ -1,0 +1,5 @@
+.projects-layout {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 35rem);
+	grid-gap: 10rem;
+}

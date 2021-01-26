@@ -1,0 +1,30 @@
+.btn {
+	&__header:link,
+	&__header:visited {
+		padding: 1.2rem 15rem;
+		text-decoration: none;
+		border: 2px solid $color-secondary-green;
+		border-radius: 10rem;
+		background-color: $color-primary;
+		color: rgba($color-grey-dark, 0.2);
+		display: inline-block;
+		cursor: pointer;
+		font-size: 1.6rem;
+		transition: all 0.3s;
+		position: relative;
+
+		&:focus {
+			outline: none;
+		}
+
+		&:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+		}
+
+		&:active {
+			transform: translateY(-1px);
+			box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+		}
+	}
+}
