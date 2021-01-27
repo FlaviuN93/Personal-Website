@@ -13,8 +13,10 @@ body {
 }
 
 .heading-2 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: 500;
+	color: $color-secondary-yellow;
+
 	&--red {
 		color: $color-secondary-red;
 	}

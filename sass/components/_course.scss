@@ -1,0 +1,42 @@
+.course {
+	display: grid;
+	grid-template-columns: 25rem 2fr;
+
+	&:not(:last-child) {
+		margin-bottom: 5rem;
+	}
+
+	&__img {
+		width: 25rem;
+	}
+
+	&__content {
+		display: grid;
+		border: 3px solid $color-white;
+		border-radius: 3px;
+		grid-template-rows: 6rem auto;
+		grid-template-columns: 2fr 2fr;
+		grid-template-areas:
+			'heading  heading'
+			'details  button';
+
+		.heading-2 {
+			grid-area: heading;
+			margin: 1rem 5rem;
+		}
+	}
+
+	&__details {
+		grid-area: details;
+		display: grid;
+		grid-template-columns: 15% max-content;
+
+		& .circle {
+			justify-self: center;
+		}
+	}
+
+	&__btn {
+		grid-area: button;
+	}
+}

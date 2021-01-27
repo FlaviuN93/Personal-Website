@@ -1,15 +1,18 @@
 .btn {
+	text-decoration: none;
+	padding: 2.5rem 1.5rem;
+	font-size: 1.6rem;
+	cursor: pointer;
+
 	&__header:link,
 	&__header:visited {
 		padding: 1.2rem 15rem;
-		text-decoration: none;
 		border: 2px solid $color-secondary-green;
 		border-radius: 10rem;
 		background-color: $color-primary;
 		color: rgba($color-grey-dark, 0.2);
 		display: inline-block;
-		cursor: pointer;
-		font-size: 1.6rem;
+
 		transition: all 0.3s;
 		position: relative;
 
@@ -25,6 +28,47 @@
 		&:active {
 			transform: translateY(-1px);
 			box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+		}
+	}
+
+	&__project {
+		grid-area: project;
+		background-color: $color-secondary-green;
+		clip-path: polygon(0% 100%, 0% 0%, 70% 50%);
+		color: $color-white;
+		transform-origin: left;
+		transition: transform 0.2s;
+
+		&:hover {
+			transform: scaleX(1.1);
+			background-color: $color-secondary-green-dark;
+		}
+	}
+
+	&__github {
+		grid-area: github;
+		align-self: start;
+		clip-path: polygon(100% 0%, 100% 100%, 30% 50%);
+	}
+
+	&__course {
+		grid-area: button;
+		align-self: center;
+		clip-path: polygon(100% 0%, 100% 100%, 45% 50%);
+		margin-top: 3rem;
+	}
+
+	&__github,
+	&__course {
+		background-color: $color-black;
+		color: $color-secondary-red;
+		text-align: right;
+		transform-origin: right;
+		transition: transform 0.2s;
+
+		&:hover {
+			transform: scaleX(1.1);
+			background-color: $color-max-black;
 		}
 	}
 }
