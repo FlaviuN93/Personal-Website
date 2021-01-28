@@ -4,14 +4,14 @@
 	position: relative;
 	perspective: 20rem;
 	border: 2px solid $color-secondary-yellow;
-	border-radius: 100px;
+	border-radius: 50%;
 	// Layout
 
 	&__side {
 		width: 12rem;
 		height: 12rem;
 		position: absolute;
-		transition: all 0.8 ease;
+		transition: all 0.4s ease-in-out;
 
 		&--front {
 		}
@@ -20,7 +20,8 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			transform: rotateY(180deg);
+			opacity: 0;
+			transform: rotateY(-180deg);
 		}
 	}
 
@@ -35,14 +36,15 @@
 	& .fa-star-half-alt {
 		height: 2rem;
 		width: 2rem;
-		color: transparent;
 	}
 
 	&:hover &__side--front {
-		transform: rotateY(-180deg);
+		transform: rotateY(180deg);
+		opacity: 0;
 	}
 
 	&:hover &__side--back {
 		transform: rotateY(0);
+		opacity: 1;
 	}
 }
