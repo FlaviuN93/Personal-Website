@@ -19,6 +19,10 @@
   margin-left: 10rem;
 }
 
+.u-width-small {
+  width: 50%;
+}
+
 *,
 *::after,
 *::before {
@@ -57,6 +61,8 @@ body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 1.6rem;
+  color: #e1e1e1;
 }
 
 .heading-1 {
@@ -87,17 +93,24 @@ body {
 
 .heading-4 {
   font-size: 2rem;
+  color: #b4c008;
+  font-weight: 500;
+}
+
+.heading-4--grey {
   color: #e1e1e1;
   font-weight: 200;
 }
 
-p {
-  color: #e1e1e1;
-  line-height: 1.5;
+.heading-4--white {
+  font-size: 2rem;
+  color: #fffcfc;
+  font-weight: 400;
 }
 
-.p--small {
-  font-size: 1.6rem;
+.p--small-red {
+  color: #c55c51;
+  font-weight: 500;
 }
 
 .p--large {
@@ -204,10 +217,82 @@ p {
   background-color: #00000050;
 }
 
+.card {
+  height: 35rem;
+  width: 35rem;
+  position: relative;
+  border: 3px solid #509437;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  height: 35rem;
+  width: 35rem;
+  position: relative;
+  border: 3px solid #509437;
+  border-radius: 50%;
+}
+
+.card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card__side {
+  height: 35rem;
+  width: 35rem;
+  position: absolute;
+}
+
+.card__side--front {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 15rem 6rem 6rem;
+      grid-template-rows: 15rem 6rem 6rem;
+  justify-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  opacity: 1;
+}
+
+.card__side--back {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[autofit];
+      grid-template-rows: repeat(autofit, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+}
+
+.card__p {
+  font-weight: 200;
+}
+
+.card__icon-1 {
+  height: 8rem;
+  width: 8rem;
+}
+
+.card__icon-2 {
+  height: 12rem;
+  width: 12rem;
+}
+
+.card__side--front:hover {
+  opacity: 0;
+}
+
+.card__side--back:hover {
+  opacity: 1;
+}
+
 .circle {
-  width: 1.75rem;
-  height: 1.75rem;
-  border: 2px solid #509437;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2.5px solid #509437;
   border-radius: 50%;
 }
 
@@ -255,19 +340,19 @@ p {
   display: grid;
   border: 3px solid #fffcfc;
   border-radius: 3px;
-  -ms-grid-rows: 6rem auto;
-      grid-template-rows: 6rem auto;
+  -ms-grid-rows: 5rem auto;
+      grid-template-rows: 5rem auto;
   -ms-grid-columns: 2fr 2fr;
       grid-template-columns: 2fr 2fr;
       grid-template-areas: 'heading  heading' 'details  button';
 }
 
-.course__content .heading-2 {
+.course__content .heading-4 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: heading;
-  margin: 1rem 5rem;
+  margin: 1rem 3rem;
 }
 
 .course__details {
@@ -276,9 +361,11 @@ p {
   grid-area: details;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 15% max-content;
-      grid-template-columns: 15% -webkit-max-content;
-      grid-template-columns: 15% max-content;
+  -ms-grid-columns: 15% 2fr;
+      grid-template-columns: 15% 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .course__details .circle {
@@ -503,6 +590,77 @@ p {
   -ms-grid-columns: (35rem)[auto-fit];
       grid-template-columns: repeat(auto-fit, 35rem);
   grid-gap: 10rem;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 5rem 1fr;
+      grid-template-rows: 5rem 1fr;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
+      grid-template-areas: 'heading-1 heading-2' 'language communication';
+}
+
+.grid .heading-3--1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: heading-1;
+}
+
+.grid .heading-3--2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: heading-2;
+}
+
+.grid__language {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: language;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (3rem)[autofit];
+      grid-template-rows: repeat(autofit, 3rem);
+  -ms-grid-columns: 3rem max-content 7rem;
+      grid-template-columns: 3rem -webkit-max-content 7rem;
+      grid-template-columns: 3rem max-content 7rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 1rem;
+}
+
+.grid__language .p--small-red {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.grid__communication {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: communication;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (3rem)[autofit];
+      grid-template-rows: repeat(autofit, 3rem);
+  -ms-grid-columns: 3rem max-content;
+      grid-template-columns: 3rem -webkit-max-content;
+      grid-template-columns: 3rem max-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 1rem;
+}
+
+.school-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15rem 5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .intro {

@@ -14,22 +14,23 @@
 		display: grid;
 		border: 3px solid $color-white;
 		border-radius: 3px;
-		grid-template-rows: 6rem auto;
+		grid-template-rows: 5rem auto;
 		grid-template-columns: 2fr 2fr;
 		grid-template-areas:
 			'heading  heading'
 			'details  button';
 
-		.heading-2 {
+		.heading-4 {
 			grid-area: heading;
-			margin: 1rem 5rem;
+			margin: 1rem 3rem;
 		}
 	}
 
 	&__details {
 		grid-area: details;
 		display: grid;
-		grid-template-columns: 15% max-content;
+		grid-template-columns: 15% 2fr;
+		align-items: center;
 
 		& .circle {
 			justify-self: center;
