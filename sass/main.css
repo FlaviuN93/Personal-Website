@@ -421,27 +421,17 @@ body {
       grid-template-columns: 10% minmax(20rem, max-content);
   grid-gap: 1.5rem;
   margin-left: 2rem;
-}
-
-.project__grid .circle {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.project__grid .p--small {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .skill {
   width: 12rem;
   height: 12rem;
   position: relative;
-  -webkit-perspective: 20rem;
-          perspective: 20rem;
+  -webkit-perspective: 50rem;
+          perspective: 50rem;
   border: 2px solid #b4c008;
   border-radius: 50%;
 }
@@ -496,6 +486,39 @@ body {
   -webkit-transform: rotateY(0);
           transform: rotateY(0);
   opacity: 1;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  width: 50%;
+}
+
+.nav__item {
+  width: 7rem;
+  height: 7rem;
+  position: relative;
+  -webkit-perspective: 30rem;
+          perspective: 30rem;
+  border: 2px solid #509437;
+  border-radius: 50%;
+}
+
+.nav__icon {
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .experience {
@@ -608,11 +631,11 @@ body {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 5rem 1fr;
-      grid-template-rows: 5rem 1fr;
-  -ms-grid-columns: 2fr 2fr;
-      grid-template-columns: 2fr 2fr;
-      grid-template-areas: 'heading-1 heading-2' 'language communication';
+  -ms-grid-rows: 5rem 1fr 50rem;
+      grid-template-rows: 5rem 1fr 50rem;
+  -ms-grid-columns: 2fr 1.5fr;
+      grid-template-columns: 2fr 1.5fr;
+      grid-template-areas: 'heading-1 heading-2' 'language communication' 'school university';
 }
 
 .grid .heading-3--1 {
@@ -666,14 +689,26 @@ body {
   grid-gap: 1rem;
 }
 
-.school-layout {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 15rem 5rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.grid__card-1 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: school;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.grid__card-2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: university;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .intro {

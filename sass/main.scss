@@ -6,11 +6,12 @@
 @import './base/typography';
 
 @import './components/btn';
-@import './components/card';
+@import './components/school';
 @import './components/circle';
 @import './components/course';
 @import './components/project';
 @import './components/skill';
+@import './components/navigation';
 
 @import './layout/experience';
 @import './layout/footer';
@@ -18,5 +19,4 @@
 @import './layout/skills';
 @import './layout/projects';
 @import './layout/education-grid';
-@import './layout/school-layout';
 @import './pages/home';

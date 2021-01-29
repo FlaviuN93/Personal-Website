@@ -28,15 +28,7 @@
 		grid-template-columns: 10% minmax(20rem, max-content);
 		grid-gap: 1.5rem;
 		margin-left: 2rem;
-
-		& .circle {
-			align-self: center;
-		}
-
-		& .p--small {
-			align-self: center;
-			width: 90%;
-		}
+		align-items: center;
 	}
 
 	// Github area
