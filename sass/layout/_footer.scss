@@ -1,4 +1,23 @@
 .footer {
 	background-color: $color-black;
 	grid-column: full-start / full-end;
+
+	margin-top: 10rem;
+	padding: 3rem 5rem;
+
+	&__logo {
+		display: flex;
+		align-content: center;
+		justify-content: center;
+	}
+
+	&__icon {
+		width: 12rem;
+		height: 12rem;
+	}
+}
+
+.copyright {
+	text-align: center;
+	padding-top: 2rem;
 }

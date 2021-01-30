@@ -311,26 +311,6 @@ body {
   border: 2px solid #fffcfc;
 }
 
-.circle--header {
-  width: 7rem;
-  height: 7rem;
-  position: absolute;
-  border: 2px solid #E1E1E1;
-  opacity: 0.3;
-  top: 9.25rem;
-  left: 12.5rem;
-}
-
-.circle--header-2 {
-  width: 7rem;
-  height: 7rem;
-  position: absolute;
-  border: 2px solid #E1E1E1;
-  opacity: 0.3;
-  top: 9.25rem;
-  left: 37.5rem;
-}
-
 .course {
   display: -ms-grid;
   display: grid;
@@ -489,14 +469,17 @@ body {
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 30% (15rem)[5];
+      grid-template-columns: 20% 30% repeat(5, 15rem);
+  -ms-grid-rows: 12rem;
+      grid-template-rows: 12rem;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
-  width: 50%;
 }
 
 .nav__item {
@@ -569,6 +552,29 @@ body {
 .footer {
   background-color: #00000029;
   grid-column: full-start / full-end;
+  margin-top: 10rem;
+  padding: 3rem 5rem;
+}
+
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__icon {
+  width: 12rem;
+  height: 12rem;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 2rem;
 }
 
 .header {

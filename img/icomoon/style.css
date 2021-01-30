@@ -15,20 +15,16 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
+.logo {
+  width: 0.826171875em;
+}
+
 .angular-icon {
   width: 0.9375em;
 }
 
 .case-icon {
   width: 1.125em;
-}
-
-.conversation-icon {
-  width: 1.0625em;
-}
-
-.education-svg {
-  width: 1.46875em;
 }
 
 .facebook-icon {
@@ -41,10 +37,6 @@ Single-colored icons can be modified like so:
 
 .graduation-cap-icon {
   width: 1.71875em;
-}
-
-.header-svg {
-  width: 0.96875em;
 }
 
 .html-icon {
@@ -73,8 +65,4 @@ Single-colored icons can be modified like so:
 
 .nodeJS-icon {
   width: 0.875em;
-}
-
-.spider-svg {
-  width: 1.34375em;
 }
