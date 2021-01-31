@@ -43,6 +43,12 @@ body {
 	&--white {
 		color: $color-white;
 	}
+
+	&--small {
+		@media only screen and (max-width: $bp-smallest) {
+			font-size: 4.5rem;
+		}
+	}
 }
 
 .heading-3 {

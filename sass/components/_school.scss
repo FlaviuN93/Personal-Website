@@ -9,6 +9,12 @@
 	@media only screen and (max-width: $bp-small) {
 		border-radius: 10px;
 		width: 58rem;
+		height: 40rem;
+	}
+
+	@media only screen and (max-width: $bp-smallest) {
+		width: 72.5rem;
+		height: 45rem;
 	}
 
 	// Layout
@@ -20,6 +26,12 @@
 
 		@media only screen and (max-width: $bp-small) {
 			width: 58rem;
+			height: 40rem;
+		}
+
+		@media only screen and (max-width: $bp-smallest) {
+			width: 72.5rem;
+			height: 45rem;
 		}
 
 		&--front {
@@ -28,6 +40,10 @@
 			justify-items: center;
 			align-items: end;
 			opacity: 1;
+
+			@media only screen and (max-width: $bp-small) {
+				grid-template-rows: 15rem 9rem 6rem;
+			}
 		}
 
 		&--back {
@@ -38,6 +54,9 @@
 			opacity: 0;
 			padding: 5rem 0;
 			transform: rotateY(-180deg);
+
+			@media only screen and (max-width: $bp-small) {
+			}
 		}
 	}
 

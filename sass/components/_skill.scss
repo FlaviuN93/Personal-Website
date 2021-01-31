@@ -12,6 +12,16 @@
 		perspective: 30rem;
 	}
 
+	@media only screen and (max-width: $bp-small) {
+		width: 16rem;
+		height: 16rem;
+	}
+
+	@media only screen and (max-width: $bp-smallest) {
+		width: 18rem;
+		height: 18rem;
+	}
+
 	// Layout
 
 	&__side {
@@ -23,6 +33,16 @@
 		@media only screen and (max-width: $bp-medium) {
 			width: 11rem;
 			height: 11rem;
+		}
+
+		@media only screen and (max-width: $bp-small) {
+			width: 16rem;
+			height: 16rem;
+		}
+
+		@media only screen and (max-width: $bp-smallest) {
+			width: 18rem;
+			height: 18rem;
 		}
 
 		&--back {
@@ -49,12 +69,31 @@
 			height: 6rem;
 			width: 6rem;
 		}
+
+		@media only screen and (max-width: $bp-small) {
+			height: 9rem;
+			width: 9rem;
+		}
+
+		@media only screen and (max-width: $bp-smallest) {
+			height: 12rem;
+			width: 12rem;
+			padding: 0.5rem;
+		}
 	}
 
 	& .fa-star,
 	& .fa-star-half-alt {
 		font-size: 1.25rem;
 		padding: 0 0.2rem;
+
+		@media only screen and (max-width: $bp-small) {
+			font-size: 2rem;
+		}
+
+		@media only screen and (max-width: $bp-smallest) {
+			font-size: 2.5rem;
+		}
 	}
 
 	// Hover Effect

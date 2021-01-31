@@ -78,9 +78,9 @@ body {
   -ms-grid-rows: 75rem (min-content)[6];
       grid-template-rows: 75rem repeat(6, -webkit-min-content);
       grid-template-rows: 75rem repeat(6, min-content);
-  -ms-grid-columns: [full-start] minmax(5rem, 1fr) [center-start] ([col-start] minmax(min-content, 18rem) [col-end])[8] [center-end] minmax(5rem, 1fr) [full-end];
-      grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 18rem) [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
-      grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 18rem) [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
+  -ms-grid-columns: [full-start] minmax(5rem, 1fr) [center-start] ([col-start] minmax(min-content, 16rem) [col-end])[8] [center-end] minmax(5rem, 1fr) [full-end];
+      grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 16rem) [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
+      grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -188,6 +188,12 @@ body {
 
 .heading-2--white {
   color: #fffcfc;
+}
+
+@media only screen and (max-width: 28em) {
+  .heading-2--small {
+    font-size: 4.5rem;
+  }
 }
 
 .heading-3 {
@@ -429,6 +435,14 @@ body {
   .school {
     border-radius: 10px;
     width: 58rem;
+    height: 40rem;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .school {
+    width: 72.5rem;
+    height: 45rem;
   }
 }
 
@@ -443,6 +457,14 @@ body {
 @media only screen and (max-width: 37.5em) {
   .school__side {
     width: 58rem;
+    height: 40rem;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .school__side {
+    width: 72.5rem;
+    height: 45rem;
   }
 }
 
@@ -456,6 +478,13 @@ body {
       -ms-flex-align: end;
           align-items: end;
   opacity: 1;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .school__side--front {
+    -ms-grid-rows: 15rem 9rem 6rem;
+        grid-template-rows: 15rem 9rem 6rem;
+  }
 }
 
 .school__side--back {
@@ -512,6 +541,21 @@ body {
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 4px solid #509437;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .circle {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
 .circle--white {
   border: 2px solid #fffcfc;
 }
@@ -548,8 +592,21 @@ body {
   }
 }
 
+@media only screen and (max-width: 28em) {
+  .course {
+    -ms-grid-rows: 57rem;
+        grid-template-rows: 57rem;
+  }
+}
+
 .course:not(:last-child) {
   margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 28em) {
+  .course:not(:last-child) {
+    margin-bottom: 7.5rem;
+  }
 }
 
 .course__img {
@@ -590,8 +647,6 @@ body {
 
 @media only screen and (max-width: 50em) {
   .course__content {
-    -ms-grid-columns: 3.5fr 1.5fr;
-        grid-template-columns: 3.5fr 1.5fr;
     -ms-grid-rows: 7rem auto;
         grid-template-rows: 7rem auto;
     border-radius: 10px;
@@ -602,6 +657,13 @@ body {
   .course__content {
     -ms-grid-rows: 10rem auto;
         grid-template-rows: 10rem auto;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .course__content {
+    -ms-grid-rows: 12rem auto;
+        grid-template-rows: 12rem auto;
   }
 }
 
@@ -726,6 +788,20 @@ body {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .skill {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .skill {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
 .skill__side {
   width: 12rem;
   height: 12rem;
@@ -738,6 +814,20 @@ body {
   .skill__side {
     width: 11rem;
     height: 11rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .skill__side {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .skill__side {
+    width: 18rem;
+    height: 18rem;
   }
 }
 
@@ -783,10 +873,39 @@ body {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .skill__icon {
+    height: 9rem;
+    width: 9rem;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .skill__icon {
+    height: 12rem;
+    width: 12rem;
+    padding: 0.5rem;
+  }
+}
+
 .skill .fa-star,
 .skill .fa-star-half-alt {
   font-size: 1.25rem;
   padding: 0 0.2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .skill .fa-star,
+  .skill .fa-star-half-alt {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .skill .fa-star,
+  .skill .fa-star-half-alt {
+    font-size: 2.5rem;
+  }
 }
 
 .skill:hover .skill__side--front {
@@ -841,6 +960,22 @@ body {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .nav {
+    -ms-grid-columns: 70% (minmax(min-content, 14rem))[4];
+        grid-template-columns: 70% repeat(4, minmax(-webkit-min-content, 14rem));
+        grid-template-columns: 70% repeat(4, minmax(min-content, 14rem));
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .nav {
+    -ms-grid-columns: 60% (minmax(min-content, 18rem))[4];
+        grid-template-columns: 60% repeat(4, minmax(-webkit-min-content, 18rem));
+        grid-template-columns: 60% repeat(4, minmax(min-content, 18rem));
+  }
+}
+
 .nav__item {
   width: 7rem;
   height: 7rem;
@@ -851,6 +986,20 @@ body {
   border-radius: 50%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .nav__item {
+    width: 9rem;
+    height: 9rem;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .nav__item {
+    width: 11rem;
+    height: 11rem;
+  }
 }
 
 .nav__item:hover {
@@ -879,12 +1028,34 @@ body {
           transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 37.5em) {
+  .nav__icon {
+    width: 7rem;
+    height: 7rem;
+    padding: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .nav__icon {
+    width: 9rem;
+    height: 9rem;
+    padding: 2rem;
+  }
+}
+
 .arrow {
   display: inline-block;
   padding: 0 1rem;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 28em) {
+  .arrow {
+    display: none;
+  }
 }
 
 .arrow:hover {
@@ -958,6 +1129,12 @@ body {
   padding: 3rem 5rem;
 }
 
+@media only screen and (max-width: 28em) {
+  .footer {
+    padding: 6rem 3rem;
+  }
+}
+
 .footer__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -977,6 +1154,12 @@ body {
 
 .copyright {
   text-align: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .copyright {
+    margin-top: 7.5rem;
+  }
 }
 
 .header {
@@ -1095,11 +1278,26 @@ body {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 5rem 1fr 50rem;
-      grid-template-rows: 5rem 1fr 50rem;
+  -ms-grid-rows: 7rem 1fr 50rem;
+      grid-template-rows: 7rem 1fr 50rem;
   -ms-grid-columns: 2fr 2.5fr;
       grid-template-columns: 2fr 2.5fr;
       grid-template-areas: 'heading-1 heading-2' 'language communication' 'school university';
+}
+
+@media only screen and (max-width: 37.5em) {
+  .grid {
+    -ms-grid-rows: 10rem 1fr 55rem;
+        grid-template-rows: 10rem 1fr 55rem;
+    grid-column-gap: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .grid {
+    -ms-grid-rows: 12rem 1fr 65rem;
+        grid-template-rows: 12rem 1fr 65rem;
+  }
 }
 
 .grid__education-1 {
@@ -1129,6 +1327,12 @@ body {
   grid-column-gap: 1rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .grid__language {
+    grid-column-gap: 3rem;
+  }
+}
+
 .grid__language .p--red {
   -ms-grid-column-align: end;
       justify-self: end;
@@ -1147,6 +1351,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
   grid-gap: 1rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .grid__communication {
+    -ms-grid-columns: 4rem minmax(min-content, max-content);
+        grid-template-columns: 4rem minmax(-webkit-min-content, -webkit-max-content);
+        grid-template-columns: 4rem minmax(min-content, max-content);
+    grid-gap: 3rem;
+  }
 }
 
 .grid__card-1 {
