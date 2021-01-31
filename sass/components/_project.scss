@@ -1,9 +1,19 @@
 .project {
-	border: 0.4rem solid $color-secondary-green;
+	border: 0.5rem solid $color-secondary-green;
 	border-radius: 5%;
 	display: grid;
 	grid-template-rows: 8rem 1fr 12rem 12rem;
 	grid-gap: 3rem;
+
+	@media only screen and (max-width: $bp-small) {
+		grid-template-rows: 8rem 1fr 30rem 15rem;
+		border: 0.7rem solid $color-secondary-green;
+	}
+
+	@media only screen and (max-width: $bp-smallest) {
+		grid-template-rows: 12rem 1fr 40rem 15rem;
+		border: 1rem solid $color-secondary-green;
+	}
 
 	grid-template-areas:
 		'title title'
@@ -29,6 +39,11 @@
 		grid-gap: 1.5rem;
 		margin-left: 1.5rem;
 		align-items: center;
+
+		@media only screen and (max-width: $bp-small) {
+			grid-column-gap: 0;
+			grid-row-gap: 2rem;
+		}
 	}
 }
 

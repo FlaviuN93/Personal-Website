@@ -23,10 +23,6 @@ html {
 	@media only screen and (max-width: $bp-large) {
 		font-size: 43.75%;
 	}
-
-	// @media only screen and (max-width: $bp-medium) {
-	// 	font-size: 37.5%;
-	// }
 }
 
 body {
@@ -35,16 +31,28 @@ body {
 
 .container {
 	display: grid;
-	grid-template-rows: 90vh repeat(6, min-content);
+	grid-template-rows: 75rem repeat(6, min-content);
 	grid-template-columns:
 		[full-start] minmax(5rem, 1fr) [center-start] repeat(
 			8,
-			[col-start] minmax(min-content, 16rem) [col-end]
+			[col-start] minmax(min-content, 18rem) [col-end]
 		)
 		[center-end] minmax(5rem, 1fr) [full-end];
 
+	@media only screen and (max-width: $bp-small) {
+		grid-template-rows: 100rem repeat(6, min-content);
+	}
+
 	& section {
-		padding: 10rem 0;
+		margin: 12rem 0;
+
+		@media only screen and (max-width: $bp-medium) {
+			margin: 15rem 0;
+		}
+
+		@media only screen and (max-width: $bp-small) {
+			margin: 18rem 0;
+		}
 	}
 }
 
@@ -62,7 +70,10 @@ body {
 
 .skills-section {
 	grid-column: full-start / full-end;
-	margin: 2rem;
+
+	@media only screen and (min-width: $bp-huge) {
+		grid-column: center-start / center-end;
+	}
 }
 
 .courses {

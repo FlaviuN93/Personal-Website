@@ -15,8 +15,11 @@ $color-grey-dark: #cdcdcd;
 
 // Responsive Breakpoints
 
+$bp-huge: 112em; // 1800px+
 $bp-largest: 84em; // 1350px
 $bp-larger: 75em; // 1200px
 $bp-large: 68.75em; //1100px
 $bp-medium: 59em; // 950px
 $bp-low-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 28em; // 450px

@@ -8,5 +8,12 @@
 		grid-gap: 10rem;
 		justify-content: center;
 	}
-}
 
+	@media only screen and (max-width: $bp-small) {
+		grid-template-columns: repeat(2, 50rem);
+	}
+
+	@media only screen and (max-width: $bp-smallest) {
+		grid-template-columns: repeat(2, 65rem);
+	}
+}

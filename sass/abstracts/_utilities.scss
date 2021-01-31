@@ -16,7 +16,17 @@
 }
 
 .u-margin-left {
-	margin-left: 10rem;
+	margin-left: 7rem;
+}
+
+.u-margin-left-small {
+	@media only screen and (max-width: $bp-medium) {
+		margin-left: 5rem;
+	}
+
+	@media only screen and (max-width: $bp-small) {
+		margin-left: 20rem;
+	}
 }
 
 .u-width-small {

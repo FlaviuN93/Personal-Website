@@ -1,4 +1,4 @@
-.card {
+.school {
 	height: 35rem;
 	width: 35rem;
 	border: 3px solid $color-secondary-green;
@@ -6,12 +6,21 @@
 	perspective: 150rem;
 	position: relative;
 
+	@media only screen and (max-width: $bp-small) {
+		border-radius: 10px;
+		width: 58rem;
+	}
+
 	// Layout
 	&__side {
 		height: 35rem;
 		width: 35rem;
 		transition: all 0.4s ease;
 		position: absolute;
+
+		@media only screen and (max-width: $bp-small) {
+			width: 58rem;
+		}
 
 		&--front {
 			display: grid;
@@ -29,10 +38,6 @@
 			opacity: 0;
 			padding: 5rem 0;
 			transform: rotateY(-180deg);
-		}
-
-		& .p-1 {
-			align-self: end;
 		}
 	}
 
