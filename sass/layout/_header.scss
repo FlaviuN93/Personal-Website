@@ -13,8 +13,16 @@
 
 	&__content {
 		width: 65%;
+
 		p {
 			width: 65%;
+			@media only screen and (max-width: $bp-medium) {
+				width: 75%;
+			}
+
+			@media only screen and (max-width: $bp-low-medium) {
+				width: 90%;
+			}
 		}
 	}
 
@@ -23,5 +31,9 @@
 		padding: 1rem;
 		border: 3px solid $color-secondary-green;
 		border-radius: 50%;
+
+		@media only screen and (max-width: $bp-medium) {
+			height: 32rem;
+		}
 	}
 }

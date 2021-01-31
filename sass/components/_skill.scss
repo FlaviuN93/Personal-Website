@@ -5,6 +5,13 @@
 	perspective: 50rem;
 	border: 2px solid $color-secondary-yellow;
 	border-radius: 50%;
+
+	@media only screen and (max-width: $bp-medium) {
+		width: 11rem;
+		height: 11rem;
+		perspective: 30rem;
+	}
+
 	// Layout
 
 	&__side {
@@ -13,7 +20,9 @@
 		position: absolute;
 		transition: all 0.4s ease-in-out;
 
-		&--front {
+		@media only screen and (max-width: $bp-medium) {
+			width: 11rem;
+			height: 11rem;
 		}
 
 		&--back {
@@ -21,7 +30,11 @@
 			align-items: center;
 			justify-content: center;
 			opacity: 0;
-			transform: rotateY(-180deg);
+			transform: translateY(50px);
+
+			@media only screen and (max-width: $bp-large) {
+				transform: rotatey(-180deg);
+			}
 		}
 	}
 
@@ -30,21 +43,45 @@
 		width: 7rem;
 		padding: 0.3rem;
 		@include centerContent;
+		transition: all 0.3s ease-in-out;
+
+		@media only screen and (max-width: $bp-large) {
+			height: 6rem;
+			width: 6rem;
+		}
 	}
 
 	& .fa-star,
 	& .fa-star-half-alt {
-		height: 2rem;
-		width: 2rem;
+		font-size: 1.25rem;
+		padding: 0 0.2rem;
 	}
 
+	// Hover Effect
+
 	&:hover &__side--front {
-		transform: rotateY(180deg);
-		opacity: 0;
+		transform: translateY(-20px);
+	}
+
+	&:hover &__icon {
+		height: 5rem;
+		width: 5rem;
 	}
 
 	&:hover &__side--back {
-		transform: rotateY(0);
+		transform: translateY(20px);
 		opacity: 1;
+	}
+
+	@media only screen and (max-width: $bp-large) {
+		&:hover &__side--front {
+			transform: rotatey(-180deg);
+			opacity: 0;
+		}
+
+		&:hover &__side--back {
+			transform: rotatey(0);
+			opacity: 1;
+		}
 	}
 }

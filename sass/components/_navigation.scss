@@ -1,10 +1,14 @@
 .nav {
 	display: grid;
-	grid-template-columns: 20% 30% repeat(5, 15rem);
+	grid-template-columns: 50% repeat(4, minmax(min-content, 16rem));
 	grid-template-rows: 12rem;
 	justify-items: center;
 	align-items: center;
 	list-style: none;
+
+	@media only screen and (max-width: $bp-medium) {
+		grid-template-columns: 60% repeat(4, minmax(min-content, 16rem));
+	}
 
 	&__item {
 		width: 7rem;
@@ -13,6 +17,17 @@
 		perspective: 30rem;
 		border: 2px solid $color-secondary-green;
 		border-radius: 50%;
+		transition: all 0.3s;
+
+		&:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 1.5rem 3rem rgba(1, 1, 1, 0.3);
+		}
+
+		&:active {
+			box-shadow: 0 0.75rem 1.5rem rgba(1, 1, 1, 0.3);
+			transform: translateY(-1px);
+		}
 	}
 
 	&__icon {
@@ -21,5 +36,23 @@
 		width: 5rem;
 		padding: 1rem;
 		@include centerContent;
+	}
+}
+.arrow {
+	display: inline-block;
+	padding: 0 1rem;
+	transition: all 0.3s ease-out;
+	cursor: pointer;
+}
+
+.arrow:hover {
+	transform: translateX(30px) scale3d(1.2, 1.2, 1.2);
+
+	@media only screen and (max-width: $bp-medium) {
+		transform: translateX(25px) scale3d(1.1, 1.1, 1.1);
+	}
+
+	@media only screen and (max-width: $bp-low-medium) {
+		transform: translateX(0) scale3d(1, 1, 1);
 	}
 }

@@ -7,17 +7,16 @@
 
 	&__logo {
 		display: flex;
-		align-content: center;
 		justify-content: center;
+		align-items: center;
 	}
 
 	&__icon {
-		width: 12rem;
-		height: 12rem;
+		width: 4rem;
+		height: 4rem;
 	}
 }
 
 .copyright {
 	text-align: center;
-	padding-top: 2rem;
 }

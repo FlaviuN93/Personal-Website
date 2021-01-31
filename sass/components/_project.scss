@@ -2,7 +2,7 @@
 	border: 0.4rem solid $color-secondary-green;
 	border-radius: 5%;
 	display: grid;
-	grid-template-rows: 10rem 1fr 12rem 10rem;
+	grid-template-rows: 8rem 1fr 12rem 12rem;
 	grid-gap: 3rem;
 
 	grid-template-areas:
@@ -15,21 +15,21 @@
 
 	h3 {
 		grid-area: title;
-		padding: 5rem 3rem;
+		padding: 4rem 3rem;
 	}
 
-	// Project area
+	// Project button _btn file
 
 	// Content area
 
 	&__grid {
 		grid-area: content;
 		display: grid;
-		grid-template-columns: 10% minmax(20rem, max-content);
+		grid-template-columns: 10% minmax(20rem, 2fr);
 		grid-gap: 1.5rem;
-		margin-left: 2rem;
+		margin-left: 1.5rem;
 		align-items: center;
 	}
-
-	// Github area
 }
+
+// Github button _btn file

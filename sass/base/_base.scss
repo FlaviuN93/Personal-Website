@@ -8,7 +8,25 @@
 
 html {
 	background-color: $color-primary;
-	font-size: 62.5%;
+	font-size: 62.5%; // 62.5 = 10px , 100 = 16px
+
+	// Check _variables file
+
+	@media only screen and(max-width: $bp-largest) {
+		font-size: 56.25%;
+	}
+
+	@media only screen and(max-width: $bp-larger) {
+		font-size: 50%;
+	}
+
+	@media only screen and (max-width: $bp-large) {
+		font-size: 43.75%;
+	}
+
+	// @media only screen and (max-width: $bp-medium) {
+	// 	font-size: 37.5%;
+	// }
 }
 
 body {
@@ -28,4 +46,29 @@ body {
 	& section {
 		padding: 10rem 0;
 	}
+}
+
+.intro {
+	grid-column: center-start / center-end;
+}
+
+.intership {
+	grid-column: center-start / center-end;
+}
+
+.projects-section {
+	grid-column: center-start / center-end;
+}
+
+.skills-section {
+	grid-column: full-start / full-end;
+	margin: 2rem;
+}
+
+.courses {
+	grid-column: center-start / center-end;
+}
+
+.education {
+	grid-column: center-start / center-end;
 }

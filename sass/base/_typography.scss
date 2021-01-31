@@ -2,7 +2,7 @@ body {
 	font-family: 'Segoe UI', sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	color: $color-grey-light;
 }
 
@@ -15,7 +15,7 @@ body {
 }
 
 .heading-2 {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-weight: 500;
 	color: $color-secondary-yellow;
 
@@ -29,13 +29,13 @@ body {
 }
 
 .heading-3 {
-	font-size: 2.25rem;
+	font-size: 2.5rem;
 	font-weight: 400;
 	color: $color-white;
 }
 
 .heading-4 {
-	font-size: 2rem;
+	font-size: 2.25rem;
 	color: $color-secondary-yellow;
 	font-weight: 500;
 
@@ -59,6 +59,12 @@ body {
 		font-weight: 500;
 	}
 }
+
+.p--light {
+	font-weight: 100;
+	color: rgba($color-grey-light, 0.75);
+}
+
 .p--large {
 	font-size: 2.3rem;
 }
