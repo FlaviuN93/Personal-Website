@@ -1,16 +1,16 @@
 .projects-layout {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 35rem);
-	grid-gap: 10rem;
+	grid-gap: 8rem;
 
 	@media only screen and (max-width: $bp-medium) {
-		grid-template-columns: repeat(2, minmax(35rem, 38rem));
+		grid-template-columns: repeat(2, 38rem);
 		grid-gap: 10rem;
 		justify-content: center;
 	}
 
 	@media only screen and (max-width: $bp-small) {
-		grid-template-columns: repeat(2, 50rem);
+		grid-template-columns: repeat(2, 55rem);
 	}
 
 	@media only screen and (max-width: $bp-smallest) {

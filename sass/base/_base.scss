@@ -24,6 +24,10 @@ html {
 		font-size: 43.75%;
 	}
 
+	@media only screen and (min-width: $bp-extra-large) {
+		font-size: 67.5%;
+	}
+
 	@media only screen and (min-width: $bp-huge) {
 		font-size: 82.5%;
 	}
@@ -37,11 +41,13 @@ body {
 	display: grid;
 	grid-template-rows: 70rem repeat(6, min-content);
 	grid-template-columns:
-		[full-start] minmax(7rem, 1fr) [center-start] repeat(
+		[full-start] 8rem [center-start] repeat(
 			8,
 			[col-start] minmax(min-content, 16rem) [col-end]
 		)
-		[center-end] minmax(7rem, 1fr) [full-end];
+		[center-end] 8rem [full-end];
+
+	justify-content: center;
 
 	@media only screen and (max-width: $bp-small) {
 		grid-template-rows: 100rem repeat(6, min-content);
