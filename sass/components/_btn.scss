@@ -12,40 +12,6 @@
 		font-size: 3.25rem;
 	}
 
-	&__header:link,
-	&__header:visited {
-		padding: 1.2rem 15rem;
-		border: 2px solid $color-secondary-green;
-		border-radius: 10rem;
-		background-color: $color-primary;
-		color: rgba($color-grey-dark, 0.2);
-		display: inline-block;
-		transition: all 0.3s;
-		position: relative;
-
-		@media only screen and (max-width: $bp-medium) {
-			padding: 1.2rem 10rem;
-		}
-
-		@media only screen and (max-width: $bp-small) {
-			display: none;
-		}
-
-		&:focus {
-			outline: none;
-		}
-
-		&:hover {
-			transform: translateY(-3px);
-			box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-		}
-
-		&:active {
-			transform: translateY(-1px);
-			box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-		}
-	}
-
 	&__project {
 		grid-area: project;
 		background-color: $color-secondary-green;
@@ -81,6 +47,11 @@
 		@media only screen and (max-width: $bp-small) {
 			clip-path: polygon(100% 100%, 100% 0%, 45% 0%, 65% 100%);
 		}
+
+		&:hover {
+			transform: scaleX(1.1);
+			background-color: $color-max-black;
+		}
 	}
 
 	&__course {
@@ -96,10 +67,10 @@
 		@media only screen and (max-width: $bp-small) {
 			clip-path: polygon(100% 100%, 100% 0%, 50% 0%, 50% 100%);
 		}
-	}
 
-	&:hover {
-		transform: scaleX(1.1);
-		background-color: $color-max-black;
+		&:hover {
+			transform: scaleX(1.1);
+			background-color: $color-max-black;
+		}
 	}
 }
