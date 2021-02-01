@@ -67,6 +67,12 @@ html {
   }
 }
 
+@media only screen and (min-width: 112em) {
+  html {
+    font-size: 82.5%;
+  }
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -123,7 +129,7 @@ body {
   grid-column: full-start / full-end;
 }
 
-@media only screen and (min-width: 112em) {
+@media only screen and (min-width: 84em) {
   .skills-section {
     grid-column: center-start / center-end;
   }
@@ -228,7 +234,7 @@ body {
 
 @media only screen and (max-width: 28em) {
   .heading-4 {
-    font-size: 4rem;
+    font-size: 4.25rem;
   }
 }
 
@@ -449,8 +455,8 @@ body {
 .school__side {
   height: 35rem;
   width: 35rem;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   position: absolute;
 }
 
@@ -505,11 +511,13 @@ body {
 .school:hover .school__side--front {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+  opacity: 0;
 }
 
 .school:hover .school__side--back {
   -webkit-transform: rotateY(0);
           transform: rotateY(0);
+  opacity: 1;
 }
 
 .school__p {
@@ -524,14 +532,6 @@ body {
 .school__icon-2 {
   height: 12rem;
   width: 12rem;
-}
-
-.school:hover .school__side--front {
-  opacity: 0;
-}
-
-.school:hover .school__side--back {
-  opacity: 1;
 }
 
 .circle {
@@ -755,7 +755,7 @@ body {
   display: grid;
   -ms-grid-columns: 10% minmax(20rem, 2fr);
       grid-template-columns: 10% minmax(20rem, 2fr);
-  grid-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
   margin-left: 1.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;

@@ -21,7 +21,7 @@
 	&__side {
 		height: 35rem;
 		width: 35rem;
-		transition: all 0.4s ease;
+		transition: all 0.5s ease;
 		position: absolute;
 
 		@media only screen and (max-width: $bp-small) {
@@ -62,10 +62,12 @@
 
 	&:hover &__side--front {
 		transform: rotateY(180deg);
+		opacity: 0;
 	}
 
 	&:hover &__side--back {
 		transform: rotateY(0);
+		opacity: 1;
 	}
 
 	&__p {
@@ -80,13 +82,5 @@
 	&__icon-2 {
 		height: 12rem;
 		width: 12rem;
-	}
-
-	&:hover &__side--front {
-		opacity: 0;
-	}
-
-	&:hover &__side--back {
-		opacity: 1;
 	}
 }

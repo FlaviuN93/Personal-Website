@@ -23,6 +23,10 @@ html {
 	@media only screen and (max-width: $bp-large) {
 		font-size: 43.75%;
 	}
+
+	@media only screen and (min-width: $bp-huge) {
+		font-size: 82.5%;
+	}
 }
 
 body {
@@ -71,7 +75,7 @@ body {
 .skills-section {
 	grid-column: full-start / full-end;
 
-	@media only screen and (min-width: $bp-huge) {
+	@media only screen and (min-width: $bp-largest) {
 		grid-column: center-start / center-end;
 	}
 }
