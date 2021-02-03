@@ -6,7 +6,7 @@
 	grid-gap: 3rem;
 
 	@media only screen and (max-width: $bp-small) {
-		grid-template-rows: 8rem 1fr 30rem 15rem;
+		grid-template-rows: 12rem 1fr 30rem 15rem;
 		border: 0.7rem solid $color-secondary-green;
 	}
 
@@ -41,8 +41,6 @@
 		align-items: center;
 
 		@media only screen and (max-width: $bp-small) {
-			grid-column-gap: 0;
-			grid-row-gap: 2rem;
 		}
 	}
 }

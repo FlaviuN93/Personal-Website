@@ -47,10 +47,6 @@ body {
 		)
 		[center-end] 8rem [full-end];
 
-	@media only screen and (max-width: $bp-small) {
-		grid-template-rows: 100rem repeat(6, min-content);
-	}
-
 	& section {
 		margin: 12rem 0;
 

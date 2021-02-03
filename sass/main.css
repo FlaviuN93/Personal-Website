@@ -95,14 +95,6 @@ body {
       grid-template-columns: [full-start] 8rem [center-start] repeat(8, [col-start] minmax(min-content, 16rem) [col-end]) [center-end] 8rem [full-end];
 }
 
-@media only screen and (max-width: 37.5em) {
-  .container {
-    -ms-grid-rows: 100rem (min-content)[6];
-        grid-template-rows: 100rem repeat(6, -webkit-min-content);
-        grid-template-rows: 100rem repeat(6, min-content);
-  }
-}
-
 .container section {
   margin: 12rem 0;
 }
@@ -694,8 +686,8 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .project {
-    -ms-grid-rows: 8rem 1fr 30rem 15rem;
-        grid-template-rows: 8rem 1fr 30rem 15rem;
+    -ms-grid-rows: 12rem 1fr 30rem 15rem;
+        grid-template-rows: 12rem 1fr 30rem 15rem;
     border: 0.7rem solid #509437;
   }
 }
@@ -730,13 +722,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .project__grid {
-    grid-column-gap: 0;
-    grid-row-gap: 2rem;
-  }
 }
 
 .skill {
@@ -1223,6 +1208,8 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .projects-layout {
+    grid-column-gap: 18rem;
+    grid-row-gap: 15rem;
     -ms-grid-columns: (55rem)[2];
         grid-template-columns: repeat(2, 55rem);
   }

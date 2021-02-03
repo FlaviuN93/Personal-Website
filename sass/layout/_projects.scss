@@ -10,6 +10,8 @@
 	}
 
 	@media only screen and (max-width: $bp-small) {
+		grid-column-gap: 18rem;
+		grid-row-gap: 15rem;
 		grid-template-columns: repeat(2, 55rem);
 	}
 
