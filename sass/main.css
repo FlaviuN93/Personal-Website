@@ -93,9 +93,6 @@ body {
   -ms-grid-columns: [full-start] 8rem [center-start] ([col-start] minmax(min-content, 16rem) [col-end])[8] [center-end] 8rem [full-end];
       grid-template-columns: [full-start] 8rem [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 16rem) [col-end]) [center-end] 8rem [full-end];
       grid-template-columns: [full-start] 8rem [center-start] repeat(8, [col-start] minmax(min-content, 16rem) [col-end]) [center-end] 8rem [full-end];
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media only screen and (max-width: 37.5em) {
