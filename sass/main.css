@@ -1244,7 +1244,6 @@ body {
   .grid {
     -ms-grid-rows: 10rem 1fr 55rem;
         grid-template-rows: 10rem 1fr 55rem;
-    grid-column-gap: 2.5rem;
   }
 }
 
@@ -1252,6 +1251,7 @@ body {
   .grid {
     -ms-grid-rows: 12rem 1fr 65rem;
         grid-template-rows: 12rem 1fr 65rem;
+    grid-column-gap: 5rem;
   }
 }
 

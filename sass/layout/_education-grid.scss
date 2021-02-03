@@ -9,11 +9,11 @@
 
 	@media only screen and (max-width: $bp-small) {
 		grid-template-rows: 10rem 1fr 55rem;
-		grid-column-gap: 2.5rem;
 	}
 
 	@media only screen and (max-width: $bp-smallest) {
 		grid-template-rows: 12rem 1fr 65rem;
+		grid-column-gap: 5rem;
 	}
 
 	&__education {
