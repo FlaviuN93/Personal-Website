@@ -35,6 +35,8 @@
 		padding: 1rem;
 		border: 3px solid $color-secondary-green;
 		border-radius: 50%;
+		animation: moveCenter 1.5s ease;
+		animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
 		@media only screen and (max-width: $bp-small) {
 			height: 45rem;
