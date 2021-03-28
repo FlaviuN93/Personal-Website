@@ -15,14 +15,6 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
-.logo {
-  width: 0.826171875em;
-}
-
-.angular-icon {
-  width: 0.9375em;
-}
-
 .case-icon {
   width: 1.125em;
 }
@@ -41,10 +33,6 @@ Single-colored icons can be modified like so:
 
 .html-icon {
   width: 0.71875em;
-}
-
-.java-icon {
-  width: 0.75em;
 }
 
 .javascript-icon {
