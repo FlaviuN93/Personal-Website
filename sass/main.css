@@ -738,8 +738,8 @@ body {
   border-radius: 5%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 8rem 1fr 12rem 12rem;
-      grid-template-rows: 8rem 1fr 12rem 12rem;
+  -ms-grid-rows: 7rem 1fr 15rem 12rem;
+      grid-template-rows: 7rem 1fr 15rem 12rem;
   grid-gap: 3rem;
       grid-template-areas: 'title title' 'project project' 'content content' 'github github';
 }

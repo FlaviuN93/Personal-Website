@@ -2,7 +2,7 @@
 	border: 0.5rem solid $color-secondary-green;
 	border-radius: 5%;
 	display: grid;
-	grid-template-rows: 8rem 1fr 12rem 12rem;
+	grid-template-rows: 7rem 1fr 15rem 12rem;
 	grid-gap: 3rem;
 
 	@media only screen and (max-width: $bp-small) {
