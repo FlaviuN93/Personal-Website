@@ -1,7 +1,12 @@
 .projects-layout {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, 35rem);
-	grid-gap: 8rem;
+	grid-template-columns: repeat(auto-fit, 38rem);
+	grid-gap: 5rem;
+
+	@media only screen and (max-width: $bp-large) {
+		grid-template-columns: repeat(auto-fit, 39rem);
+		grid-gap: 5rem;
+	}
 
 	@media only screen and (max-width: $bp-medium) {
 		grid-template-columns: repeat(2, 38rem);
@@ -10,12 +15,14 @@
 	}
 
 	@media only screen and (max-width: $bp-small) {
-		grid-column-gap: 18rem;
-		grid-row-gap: 15rem;
-		grid-template-columns: repeat(2, 55rem);
+		grid-gap: 15rem;
+
+		grid-template-columns: repeat(2, 57rem);
 	}
 
 	@media only screen and (max-width: $bp-smallest) {
-		grid-template-columns: repeat(2, 65rem);
+		grid-gap: 12rem;
+
+		grid-template-columns: repeat(2, 70rem);
 	}
 }
