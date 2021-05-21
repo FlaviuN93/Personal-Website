@@ -738,8 +738,8 @@ body {
   border-radius: 5%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 7rem 1fr 16rem 12rem;
-      grid-template-rows: 7rem 1fr 16rem 12rem;
+  -ms-grid-rows: 7rem 1fr 19rem 12rem;
+      grid-template-rows: 7rem 1fr 19rem 12rem;
   grid-gap: 3rem;
       grid-template-areas: 'title title' 'project project' 'content content' 'github github';
 }
@@ -753,16 +753,16 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .project {
-    -ms-grid-rows: 12rem 1fr 35rem 16rem;
-        grid-template-rows: 12rem 1fr 35rem 16rem;
+    -ms-grid-rows: 12rem 1fr 37.5rem 16rem;
+        grid-template-rows: 12rem 1fr 37.5rem 16rem;
     border: 0.7rem solid #509437;
   }
 }
 
 @media only screen and (max-width: 28em) {
   .project {
-    -ms-grid-rows: 12rem 1fr 50rem 18rem;
-        grid-template-rows: 12rem 1fr 50rem 18rem;
+    -ms-grid-rows: 12rem 1fr 55rem 18rem;
+        grid-template-rows: 12rem 1fr 55rem 18rem;
     border: 1rem solid #509437;
   }
 }

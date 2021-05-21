@@ -2,7 +2,7 @@
 	border: 0.5rem solid $color-secondary-green;
 	border-radius: 5%;
 	display: grid;
-	grid-template-rows: 7rem 1fr 16rem 12rem;
+	grid-template-rows: 7rem 1fr 19rem 12rem;
 	grid-gap: 3rem;
 
 	@media only screen and (max-width: $bp-large) {
@@ -10,12 +10,12 @@
 	}
 
 	@media only screen and (max-width: $bp-small) {
-		grid-template-rows: 12rem 1fr 35rem 16rem;
+		grid-template-rows: 12rem 1fr 37.5rem 16rem;
 		border: 0.7rem solid $color-secondary-green;
 	}
 
 	@media only screen and (max-width: $bp-smallest) {
-		grid-template-rows: 12rem 1fr 50rem 18rem;
+		grid-template-rows: 12rem 1fr 55rem 18rem;
 		border: 1rem solid $color-secondary-green;
 	}
 
